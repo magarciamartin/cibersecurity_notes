@@ -1,1 +1,37 @@
-Gophish
+## 🛡️ Security Operations Center (SOC) Tool Stack
+
+This section covers the foundational tools utilized within a modern Security Operations Center (SOC) to orchestrate visibility, continuous monitoring, and automated incident response.
+
+### 📥 1. SIEM & Log Aggregation (Visibility Tier)
+Centralizes security events, logs, and telemetry data from across the enterprise network to perform real-time correlation and alert generation.
+
+*   **[Wazuh](https://github.com)** - A free, open-source enterprise security platform providing unified XDR and SIEM capabilities, covering endpoint monitoring, log analysis, and vulnerability detection.
+*   **[Security Onion](https://github.com)** - A powerful open-source Linux distribution for threat hunting, enterprise security monitoring, and log management. It bundles top tier utilities into a single, cohesive engine.
+*   **[OpenSearch](https://github.com)** - A community-driven, open-source search and analytics suite frequently deployed by SOC engineering teams for indexing large volumes of security logs.
+
+### 🖥️ 2. Endpoint Detection & Response (EDR / HIDS)
+Monitors endpoint telemetry, tracks malicious process execution, inspects file integrity, and isolates compromised hosts directly from the console.
+
+*   **[OpenOSSEC](https://github.com)** - A widely deployed host-based intrusion detection system (HIDS) performing log analysis, integrity checking, rootkit detection, and time-based alerting.
+*   **[Velociraptor](https://github.com)** - A highly scalable, open-source endpoint visibility and digital forensics tool designed to query fleets of machines simultaneously using custom VQL playbooks.
+*   **[Fleet DM (Osquery)](https://github.com)** - An open-source management interface for Osquery, allowing SOC analysts to query endpoints like a distributed SQL database to find malicious registry changes or active sessions.
+
+### 🌐 3. Network Security & Packet Analysis
+Captures network traffic, identifies anomalous communication patterns, inspects protocols, and generates alerts for known lateral movement techniques.
+
+*   **[Zeek (formerly Bro)](https://github.com)** - A powerful network security monitoring framework that translates raw network packets into structured operational logs, separating application layers cleanly.
+*   **[Suricata](https://github.com)** - A high-performance, open-source Network Threat Detection engine capable of real-time Intrusion Detection (IDS), Intrusion Prevention (IPS), and PCAP logging.
+*   **[Wireshark](https://github.com)** - The world's most ubiquitous network protocol analyzer, indispensable for deep-dive microscopic inspection of suspicious traffic dumps (PCAP).
+
+### 🤖 4. SOAR & Case Management (Incident Orchestration)
+Automates repetitive triage processes, standardizes investigation steps via code, and manages incident ticket lifecycles.
+
+*   **[TheHive Project](https://github.com)** - A scalable, open-source Security Incident Response Platform tightly integrated with MISP to allow analysts to triage multiple alerts simultaneously.
+*   **[Shuffle](https://github.com)** - A popular open-source SOAR (Security Orchestration, Automation, and Response) platform utilizing a graphical user interface to build automated response workflows.
+*   **[Cortex](https://github.com)** - An open-source analysis engine built to work seamlessly with TheHive, letting analysts run hundreds of observable lookups (IPs, URLs, Hashes) with a single click.
+
+### 🧠 5. Threat Intelligence Platforms (TIP)
+Collects, normalizes, and distributes Indicators of Compromise (IOCs) and attacker TTPs to enrich local SOC alerts with global context.
+
+*   **[MISP (Malware Information Sharing Platform)](https://github.com)** - A trusted open-source platform for sharing threat intelligence, indicators of compromise, financial fraud information, and vulnerability data.
+*   **[Yeti](https://github.com)** - An open-source platform designed to organize threat intelligence feeds, automatically scraping external indicators and linking them to specific adversary profiles.
