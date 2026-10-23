@@ -35,3 +35,6 @@ Collects, normalizes, and distributes Indicators of Compromise (IOCs) and attack
 
 *   **[MISP (Malware Information Sharing Platform)](https://github.com)** - A trusted open-source platform for sharing threat intelligence, indicators of compromise, financial fraud information, and vulnerability data.
 *   **[Yeti](https://github.com)** - An open-source platform designed to organize threat intelligence feeds, automatically scraping external indicators and linking them to specific adversary profiles.
+
+### 🧠 6. Phishing Simulation tools
+*   **[Gophish] Open-source pishing simulation framework designed to help businesses, penetration testers, and security teams evaluate organizational exposure to social engineering attacks. 
