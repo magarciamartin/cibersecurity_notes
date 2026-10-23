@@ -8,7 +8,7 @@ A curated blueprint of the infrastrucutre components, foundational software, pla
 
 ## 📚 Índice de Contenidos
 
-* 📖 **[Apuntes Teóricos](./apuntes/)**: Conceptos de redes, sistemas y criptografía.
+* 📖 **[Apuntes Teóricos](./software/)**: Conceptos de redes, sistemas y criptografía.
 * 🛠️ **[Herramientas](./herramientas/)**: Comandos y guías rápidas de las aplicaciones que uso.
 * 🧪 **[Laboratorios](./laboratorios/)**: Notas sobre prácticas y retos (CTFs).
 
